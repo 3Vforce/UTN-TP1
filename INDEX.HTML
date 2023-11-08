@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE CONTACTO</title>
+    <link rel="stylesheet" href="CSS/STYLE.CSS">
+</head>
+<body>
+    <div class="content">
+        <form action="envio.php" method="post" target="_blank">
+            <div class="form-header">
+                <h1 class="form-title">C<span>ontactate con nosotros.</span></h1>
+            </div>
+
+            <label for="nombre" class="form-label">Nombres:</label>
+            <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre" required>
+
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" id="apellido" class="form-input" placeholder="Escriba su apellido" required>
+
+            <label for="dni" class="form-label">DNI:</label>
+            <input type="number" id="dni" class="form-input" placeholder="Escriba su numero de DNI" required>
+
+            <label for="correo electrónico" class="form-label">Correo Electrónico:</label>
+            <input type="email" id="nombre" class="form-input" placeholder="Escriba su dirección de correo electrónico" required>
+
+            <label for="telefono" class="form-label">Teléfono de contacto:</label>
+            <input type="number" id="telefono" class="form-input" placeholder="Escriba su numero de teléfono" required>
+
+            
+               <label for="tipo de seguro" class="form-label">Tipo de seguro</label>
+               <br>
+            <div class="tipo-de-seguro">
+              <ul>
+                <input id="basico" onclick="valorbasico ()" type="radio" name="lenguajes" value="basico" > Básico.
+                <input id="intermedio" onclick="valorintermedio ()" type="radio" name="lenguajes" value="intermedio" > Intermedio.
+                <input id="premium" onclick="valorpremium ()" type="radio" name="lenguajes" value="premium" > Premium.
+              </ul>
+                <br>
+                <h5> VALOR DE SEGURO:</h5>  <p id="valorseguro"> </p>
+                <br>
+            </div>
+            <br>
+             
+            <br> 
+
+            <input type="submit" class="btn-submit" value="Enviar">
+        </form>
+    </div>
+
+    <script src="/TP-1/JS/JASON.JS"> </script>
+
+</body>
+</html>
